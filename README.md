@@ -27,6 +27,23 @@ deterministically on a held-out 5×5 grid of cube positions never seen during tr
 
 ![Training curves](results/training_curves/training_curves.png)
 
+## Demo
+
+<p align="center">
+  <img src="media/demo/franka_pick_lift_demo.gif"
+       alt="Franka Panda PPO pick-and-lift demonstration"
+       width="700">
+</p>
+
+<p align="center">
+  <a href="media/demo/franka_pick_lift_demo.mp4">
+    Watch the full 720p demonstration
+  </a>
+</p>
+
+The deterministic PPO policy performs reach → grasp → lift from three
+representative positions in the held-out evaluation grid.
+
 ## Problem / motivation
 
 The goal is to train a Franka Panda, entirely in simulation, to take a cube at a randomized XY
