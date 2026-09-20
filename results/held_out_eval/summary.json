@@ -1,0 +1,15 @@
+{
+  "checkpoint": "/home/sachin/franka_pick_lift_rl/logs/rsl_rl/franka_pick_lift_cube/2026-09-20_10-14-12/model_200.pt",
+  "task": "Franka-PickLift-Cube-v0",
+  "seed": 0,
+  "number_of_positions": 25,
+  "successes": 25,
+  "failures": 0,
+  "success_rate": 1.0,
+  "mean_time_to_success_successes_only": 1.1408,
+  "median_time_to_success_successes_only": 1.1400000000000001,
+  "min_time_to_success": 1.06,
+  "max_time_to_success": 1.22,
+  "mean_max_cube_z": 0.9644589376449585,
+  "drop_count": 0
+}

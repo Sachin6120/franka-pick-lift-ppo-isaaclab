@@ -1,0 +1,5 @@
+[project]
+name = "franka-pick-lift-rl"
+version = "0.1.0"
+description = "Tier-1 external Isaac Lab project: Franka cube pick-and-lift with PPO"
+requires-python = ">=3.12"

@@ -1,0 +1,21 @@
+[package]
+
+version = "0.1.0"
+
+category = "isaaclab"
+readme = "README.md"
+
+title = "Franka Pick-Lift RL"
+author = "Sachin Kumar Pal"
+maintainer = "Sachin Kumar Pal"
+description = "Tier-1 external Isaac Lab project: Franka cube pick-and-lift with PPO"
+keywords = ["isaaclab", "manipulation", "franka", "ppo"]
+
+[dependencies]
+"isaaclab" = {}
+"isaaclab_assets" = {}
+"isaaclab_rl" = {}
+"isaaclab_tasks" = {}
+
+[[python.module]]
+name = "franka_pick_lift_rl"

@@ -1,0 +1,5 @@
+{
+  "run_dir": "/home/sachin/franka_pick_lift_rl/logs/rsl_rl/franka_pick_lift_cube/2026-09-20_10-14-12",
+  "last_available_iteration": 220,
+  "note": "Run's own successor checkpoint window (0-200) reflects the valid, independently evaluated canonical training; the underlying event file only contains data through this run's own logged extent."
+}

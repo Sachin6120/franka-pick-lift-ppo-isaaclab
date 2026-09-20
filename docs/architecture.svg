@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill: #f5f7fa; stroke: #2b3a55; stroke-width: 1.5; rx: 6; }
+    .box-accent { fill: #eaf2ff; stroke: #1f5fbf; stroke-width: 1.5; rx: 6; }
+    .box-reward { fill: #eefaf0; stroke: #1f8a3d; stroke-width: 1.5; rx: 6; }
+    .label { font-size: 15px; fill: #14213d; font-weight: 600; }
+    .sublabel { font-size: 12px; fill: #445; }
+    .arrow { stroke: #333; stroke-width: 1.6; fill: none; marker-end: url(#arrow); }
+  </style>
+
+  <!-- Randomized cube state -->
+  <rect class="box" x="330" y="10" width="240" height="46"/>
+  <text class="label" x="450" y="38" text-anchor="middle">Randomized cube XY position</text>
+
+  <line class="arrow" x1="450" y1="56" x2="450" y2="90"/>
+
+  <!-- Observation manager -->
+  <rect class="box" x="330" y="90" width="240" height="46"/>
+  <text class="label" x="450" y="118" text-anchor="middle">Observation manager</text>
+
+  <line class="arrow" x1="450" y1="136" x2="450" y2="170"/>
+
+  <!-- 32-D observation -->
+  <rect class="box-accent" x="290" y="170" width="320" height="60"/>
+  <text class="label" x="450" y="195" text-anchor="middle">32-D policy observation</text>
+  <text class="sublabel" x="450" y="215" text-anchor="middle">joint pos(9) + joint vel(9) + cube-in-root(3) + cube-in-EE(3) + last action(8)</text>
+
+  <line class="arrow" x1="450" y1="230" x2="450" y2="264"/>
+
+  <!-- PPO actor -->
+  <rect class="box-accent" x="330" y="264" width="240" height="46"/>
+  <text class="label" x="450" y="292" text-anchor="middle">PPO actor (RSL-RL)</text>
+
+  <line class="arrow" x1="450" y1="310" x2="450" y2="344"/>
+
+  <!-- 8 actions -->
+  <rect class="box-accent" x="290" y="344" width="320" height="46"/>
+  <text class="label" x="450" y="372" text-anchor="middle">7 arm joint-position actions + 1 gripper action</text>
+
+  <line class="arrow" x1="450" y1="390" x2="450" y2="424"/>
+
+  <!-- Franka / PhysX -->
+  <rect class="box" x="330" y="424" width="240" height="46"/>
+  <text class="label" x="450" y="452" text-anchor="middle">Franka Panda / PhysX simulation</text>
+
+  <line class="arrow" x1="450" y1="470" x2="450" y2="504"/>
+
+  <!-- reward + success -->
+  <rect class="box-reward" x="270" y="504" width="360" height="46"/>
+  <text class="label" x="450" y="532" text-anchor="middle">reward manager + sustained-lift success evaluation</text>
+
+  <!-- feedback loop back to actor (training only) -->
+  <path class="arrow" d="M 630 527 C 800 527, 800 287, 578 287" fill="none"/>
+  <text class="sublabel" x="720" y="410" text-anchor="middle">PPO policy gradient (training only)</text>
+</svg>
